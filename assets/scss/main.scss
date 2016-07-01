@@ -1,0 +1,50 @@
+// LOADING TEMPLATES 
+
+@import 'lib/normalize';
+@import 'mixins';
+@import 'var';
+@import 'typography';
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+
+body, html {
+	height: 100%;
+	background: $backGrey;
+}
+
+.wrapper {
+	width: 80%;
+	color: white;
+	max-width: 1200px;
+}
+
+body > header {
+	img {
+		max-width: 5em;
+		border-radius: 50%;
+	}
+	padding: 3em 2em 15em;
+	color: white;
+	text-align: center;
+	background: $coffee;
+	h2 {
+		font-size: 2.5em;
+		margin-bottom: 0em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+}
+
+#presentation {
+	max-width: 1200px;
+	width: 80%;
+	margin: -11em auto 2em;
+	background: white;
+	padding: 2em;
+	@include shadow(2);
+}
